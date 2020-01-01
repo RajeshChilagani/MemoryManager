@@ -30,7 +30,13 @@
     <ClCompile Include="GameObject\GameObject.cpp">
       <Filter>Source Files\GameObject</Filter>
     </ClCompile>
-    <ClCompile Include="HeapManager.cpp">
+    <ClCompile Include="MemoryManager\BitArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManager\FixedSizeAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManager\HeapManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,17 +53,35 @@
     <ClInclude Include="Math\Point2D_inl.h">
       <Filter>Source Files\Math</Filter>
     </ClInclude>
-    <ClInclude Include="HeapManager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Containers\LinkedList.h">
+    <ClInclude Include="GameObject\EC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeapManager_inl.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Utilities\Utilities.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HeapManager_UnitTest.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="MemoryManager\BitArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\BitArray_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\FixedSizeAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\HeapManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\HeapManager_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\MemoryInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\MemoryInterface_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManager\FixedSizeAllocator_inl.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

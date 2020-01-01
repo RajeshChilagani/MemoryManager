@@ -21,18 +21,26 @@
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="GameObject\GameObject.cpp" />
-    <ClCompile Include="HeapManager.cpp" />
     <ClCompile Include="Math\Point2D.cpp" />
+    <ClCompile Include="MemoryManager\BitArray.cpp" />
+    <ClCompile Include="MemoryManager\FixedSizeAllocator.cpp" />
+    <ClCompile Include="MemoryManager\HeapManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Containers\LinkedList.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="GameObject\EC.h" />
     <ClInclude Include="GameObject\GameObject.h" />
-    <ClInclude Include="HeapManager.h" />
-    <ClInclude Include="HeapManager_inl.h" />
-    <ClInclude Include="HeapManager_UnitTest.h" />
     <ClInclude Include="Math\Point2D.h" />
     <ClInclude Include="Math\Point2D_inl.h" />
+    <ClInclude Include="MemoryManager\BitArray.h" />
+    <ClInclude Include="MemoryManager\BitArray_inl.h" />
+    <ClInclude Include="MemoryManager\FixedSizeAllocator.h" />
+    <ClInclude Include="MemoryManager\FixedSizeAllocator_inl.h" />
+    <ClInclude Include="MemoryManager\HeapManager.h" />
+    <ClInclude Include="MemoryManager\HeapManager_inl.h" />
+    <ClInclude Include="MemoryManager\MemoryInterface.h" />
+    <ClInclude Include="MemoryManager\MemoryInterface_inl.h" />
+    <ClInclude Include="Utilities\Utilities.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -107,6 +115,7 @@
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -122,6 +131,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -139,6 +149,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -158,6 +169,7 @@
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
